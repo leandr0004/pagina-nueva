@@ -1,0 +1,1498 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Indie Hoy</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="top-bar">
+    <div class="contenedor-limite barra-flex">
+      <div class="social-icons">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+      <div class="logo-principal">
+        <img src="img/Logo_de_Indie_Hoy 2.png" alt="Indie Hoy" id="btn-logo-home" style="cursor: pointer;">
+      </div>
+      <button class="btn-comunidad">COMUNIDAD</button>
+    </div>
+  </div>
+
+  <nav class="nav-bar">
+    <div class="contenedor-limite barra-flex">
+      <button class="menu-hamburguesa" type="button" aria-label="Abrir menu" aria-expanded="false">
+        <i class="fa-solid fa-bars"></i>
+      </button>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="#" id="btn-nav-musica">MUSICA</a></li>
+        <li><a href="#" id="btn-nav-cine">CINE/SERIES</a></li>
+        <li><a href="#" id="btn-nav-calendario">EVENTOS</a></li>
+        <li><a href="#" id="btn-nav-cultura">CULTURA</a></li>
+      </ul>
+      <div class="nav-usuario">
+        <i class="fa-solid fa-magnifying-glass icono-busqueda"></i>
+        <img src="img/usuario.png" alt="Avatar" class="avatar-header">
+      </div>
+    </div>
+  </nav>
+
+  <main class="contenedor-limite main-layout">
+    
+    <div id="vista-home" class="home-referencia">
+      <section class="home-mobile-carousel" aria-label="Noticias destacadas">
+        <div class="home-mobile-carousel-track" id="mobileHomeTrack">
+          <article class="mobile-home-slide" id="trigger-duki-mobile">
+            <img src="img/duki.jpg" alt="Duki en vivo">
+            <h1>La empresa detrás de los shows de Duki, Bizarrap y más artistas argentinos se asocia con Live Nation</h1>
+          </article>
+          <article class="mobile-home-slide" id="trigger-lali-mobile">
+            <img src="img/lali.png" alt="Lali en vivo">
+            <h1>Lali nos cuenta cómo fue llenar tres estadios River</h1>
+          </article>
+          <article class="mobile-home-slide" id="trigger-spiderman-mobile">
+            <img src="img/spiderman.png" alt="Spider-Man">
+            <h1>Te contamos 10 datos que no sabías sobre Spider-Man</h1>
+          </article>
+        </div>
+        <div class="home-mobile-carousel-dots" aria-hidden="true">
+          <span class="activo"></span><span></span><span></span>
+        </div>
+      </section>
+
+      <h2 class="home-mobile-latest-title">Ultimas noticias</h2>
+      <section class="home-mobile-latest-track" aria-label="Ultimas noticias">
+        <article><img src="img/ysya-poster.jpg" alt="YSY A en Movistar Arena"><h3>YSY A en Movistar Arena</h3></article>
+        <article><img src="img/nTvg.png" alt="No Te Va Gustar en vivo"><h3>No Te Va Gustar en vivo</h3></article>
+        <article><img src="img/camilo.png" alt="Camilo en vivo"><h3>Camilo llega al Movistar Arena</h3></article>
+      </section>
+
+      <section class="home-hero-grid">
+        <article class="home-hero-card" id="trigger-duki">
+          <img src="img/duki.jpg" alt="Duki en vivo">
+          <div class="home-hero-copy">
+            <h1>La empresa detrás de los shows de Duki, Bizarrap y más artistas argentinos se asocia con Live Nation</h1>
+          </div>
+
+        </article>
+
+        <button class="btn-chat-flotante" id="btnChatFlotante" type="button" aria-label="Abrir chats">
+          <i class="fa-regular fa-comments"></i>
+        </button>
+
+        <div class="popup-chats" id="popupChats">
+          <div class="popup-chats-cabecera">
+            <span class="popup-chats-titulo">Tus chats:</span>
+            <button class="btn-cerrar-popup" id="btnCerrarChats" type="button">&times;</button>
+          </div>
+          <div class="popup-chats-lista">
+            <div class="popup-chat-item">
+              <img src="img/usuario2.png" alt="Dante" class="chat-avatar">
+              <div class="chat-info">
+                <div class="chat-fila-superior"><h4>DanteLopez_</h4><span class="chat-hora">10:35</span></div>
+                <p class="chat-previsualizacion">Nos vemos en el Movistar!</p>
+              </div>
+            </div>
+            <div class="popup-chat-item">
+              <img src="img/usuario3.png" alt="Chano" class="chat-avatar">
+              <div class="chat-info">
+                <div class="chat-fila-superior"><h4>Chano_02</h4><span class="chat-hora">11:14</span></div>
+                <div class="chat-fila-inferior"><p class="chat-previsualizacion">Ya escuchaste el feat de Milo J?</p><span class="badge-chat-alerta">2</span></div>
+              </div>
+            </div>
+            <div class="popup-chat-item">
+              <img src="img/indios.png" alt="La banda" class="chat-avatar">
+              <div class="chat-info">
+                <div class="chat-fila-superior"><h4>La banda de los indios</h4><span class="chat-hora">Ayer</span></div>
+                <div class="chat-fila-inferior"><p class="chat-previsualizacion">Martina_Indie: subieron la...</p><span class="badge-chat-alerta">21</span></div>
+              </div>
+            </div>
+          </div>
+          <button class="btn-ver-todos-chats" type="button">Ver todos los chats</button>
+        </div>
+      </section>
+
+      <section class="home-side-news" id="trackAuto">
+        <article class="home-news-row slide-auto" id="trigger-lali">
+          <img src="img/lali.png" alt="Lali">
+          <h2>Lali nos cuenta como fue llenar 3 estadio River. Todo el detras de la exitosa cantante argentina.</h2>
+        </article>
+
+        <article class="home-news-row slide-auto" id="trigger-spiderman">
+          <img src="img/spiderman.png" alt="Spider-Man">
+          <h2>Te contamos 10 datos que no sabias sobre Spider-Man: De regreso a casa</h2>
+        </article>
+      </section>
+
+      <section class="home-poster-calendar">
+        <article class="home-poster-feature">
+          <img src="img/ysya-poster.jpg" alt="YSY A en Movistar Arena">
+          <h2>Ysy a en Movistar arena</h2>
+        </article>
+
+        <aside class="home-calendar-panel">
+          <div class="widget-panel">
+            <div class="home-calendar-title-row"><h2 class="widget-titulo">Mi calendario</h2><button class="btn-home-calendario-ver-todo" type="button">Ver todo</button></div>
+            <div class="selector-mes"><span class="mes-texto" id="mes-texto">Julio 2026</span></div>
+            <div class="lista-items-panel">
+              <div class="fila-panel-item">
+                <div class="evento-fecha"><span class="dia">04</span><span class="mes">jul</span></div>
+                <img src="img/ysya-thumb.jpg" alt="YSY A" class="panel-thumb-cuadrado">
+                <div class="panel-detalles"><h4>YSY A</h4><p>Movistar Arena</p><p class="hora-gris">20:00 hrs</p></div>
+              </div>
+              <div class="fila-panel-item">
+                <div class="evento-fecha"><span class="dia">22</span><span class="mes">jul</span></div>
+                <img src="img/rosalia.png" alt="Rosalia" class="panel-thumb-cuadrado">
+                <div class="panel-detalles"><h4>Rosalia</h4><p>Estadio Velez</p><p class="hora-gris">21:30 hrs</p></div>
+              </div>
+              <div class="fila-panel-item">
+                <div class="evento-fecha"><span class="dia">28</span><span class="mes">jul</span></div>
+                <img src="img/koino.png" alt="Koino Yokan" class="panel-thumb-cuadrado">
+                <div class="panel-detalles"><h4>Koino Yokan</h4><p>Teatro Vorterix</p><p class="hora-gris">19:30 hrs</p></div>
+              </div>
+              <div class="fila-panel-item">
+                <div class="evento-fecha"><span class="dia">02</span><span class="mes">ago</span></div>
+                <img src="img/dukigrupo.png" alt="Duki" class="panel-thumb-cuadrado">
+                <div class="panel-detalles"><h4>Duki</h4><p>Movistar Arena</p><p class="hora-gris">21:00 hrs</p></div>
+              </div>
+            </div>
+            <button class="btn-panel-accion" id="btn-home-calendario-full" type="button">Ver calendario completo</button>
+          </div>
+        </aside>
+      </section>
+
+      <section class="home-split-grid">
+        <div class="home-main-feed">
+          <section class="home-block home-groups-block">
+            <h2 class="home-section-title">Grupos en los que estas:</h2>
+            <div class="home-groups-grid">
+              <article class="home-group-card">
+                <img src="img/dukigrupo.png" alt="Duki">
+                <div><h3>Duki - Movistar Arena</h3><p>560 miembros</p></div>
+                <span>9+</span>
+              </article>
+              <article class="home-group-card">
+                <img src="img/miloj.png" alt="Milo J">
+                <div><h3>Milo J - Fans</h3><p>430 miembros</p></div>
+                <span>2+</span>
+              </article>
+              <article class="home-group-card">
+                <img src="img/becerra.png" alt="Maria Becerra">
+                <div><h3>Maria Becerra - River</h3><p>540 miembros</p></div>
+                <span>15+</span>
+              </article>
+              <article class="home-group-card">
+                <img src="img/indios.png" alt="La banda de los indios">
+                <div><h3>La banda de los indios</h3><p>320 miembros</p></div>
+                <span>4+</span>
+              </article>
+            </div>
+            <button class="btn-azul-pill" id="btn-home-grupos-full" type="button"><span class="texto-grupos-desktop">Ver todos mis grupos</span><span class="texto-grupos-mobile">Ver todos tus grupos</span></button>
+          </section>
+
+          <section class="home-block">
+            <h2 class="home-section-title">Ultimas noticias</h2>
+            <div class="home-latest-grid">
+              <article class="home-news-row">
+                <img src="img/queen.png" alt="Queen">
+                <h3>6 teorias sobre el significado de Bohemian Rhapsody de Queen</h3>
+              </article>
+              <article class="home-news-row">
+                <img src="img/greenday.png" alt="Green Day">
+                <h3>4 discos que cuentan una historia de principio a fin</h3>
+              </article>
+              <article class="home-news-row">
+                <img src="img/carruseln.png" alt="Netflix">
+                <h3>Netflix estreno La desconocida: que dicen las criticas sobre la pelicula espanola</h3>
+              </article>
+              <article class="home-news-row">
+                <img src="img/thundercat-mac-miller.png" alt="Thundercat y Mac Miller">
+                <h3>Thundercat sorprende con una cancion inedita junto a Mac Miller</h3>
+              </article>
+            </div>
+          </section>
+
+          <section class="home-block seccion-guardados">
+            <div class="home-title-row">
+              <h2 class="home-section-title">Contenido que guardaste</h2>
+              <a href="#" class="link-ver-mas-azul">Ver mas <i class="fa-solid fa-chevron-right"></i></a>
+            </div>
+            <div class="home-saved-grid">
+              <article class="home-saved-card">
+                <img src="img/disney-card.png" alt="Disney+">
+                <p>Que ver en Disney+: 4 series basadas en hechos reales</p>
+              </article>
+              <article class="home-saved-card">
+                <img src="img/mccartney-card.png" alt="Paul McCartney">
+                <p>Las 5 mejores canciones de Paul McCartney fuera de The Beatles</p>
+              </article>
+              <article class="home-saved-card">
+                <img src="img/godspeed-card.png" alt="Godspeed You! Black Emperor">
+                <p>Godspeed You! Black Emperor llega a la Argentina</p>
+              </article>
+            </div>
+          </section>
+
+          <section class="home-block seccion-intereses">
+            <h2 class="home-section-title">Noticias que podrian interesarte</h2>
+            <div class="home-interest-grid">
+              <article class="home-interest-card">
+                <img src="img/ysya-thumb.jpg" alt="YSY A">
+                <div><p>YSY A confirmo su nuevo show</p><small class="home-interest-meta"><i class="fa-regular fa-eye"></i>532</small><button class="btn-ver-mas btn-unirse-grupo" type="button">Unirse al grupo</button></div>
+              </article>
+              <article class="home-interest-card">
+                <img src="img/The_Amazing_Spider_Man 1.png" alt="Spider-Man">
+                <div><p>Spider-Man confirmo su nueva pelicula</p><small class="home-interest-meta"><i class="fa-regular fa-eye"></i>416</small><button class="btn-ver-mas btn-unirse-grupo" type="button">Unirse al grupo</button></div>
+              </article>
+              <article class="home-interest-card">
+                <img src="img/the-rolling-stones.png" alt="The Rolling Stones">
+                <div><p>The Rolling Stones preparan una colaboracion inesperada</p><small class="home-interest-meta"><i class="fa-regular fa-eye"></i>289</small><button class="btn-ver-mas btn-unirse-grupo" type="button">Unirse al grupo</button></div>
+              </article>
+            </div>
+          </section>
+        </div>
+
+      </section>
+    </div>
+
+    <div id="vista-musica" style="display: none;" class="vista-musica-container">
+      <section class="musica-grupos-seccion">
+        <h1>Tus grupos de musica:</h1>
+        <div class="musica-grupos-carrusel">
+          <div class="musica-grupos-track" id="musica-grupos-track">
+            <article class="musica-grupo-card">
+              <img src="img/dukigrupo.png" alt="Duki - Movistar Arena">
+              <h2>Duki - Movistar Arena</h2>
+              <div class="musica-grupo-meta"><p>320 miembros</p><span class="musica-mensajes-badge">6+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Duki - Movistar Arena"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="musica-grupo-card">
+              <img src="img/miloj.png" alt="Milo J - Fans">
+              <h2>Milo J - Fans</h2>
+              <div class="musica-grupo-meta"><p>430 miembros</p><span class="musica-mensajes-badge">4+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Milo J - Fans"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="musica-grupo-card">
+              <img src="img/becerra.png" alt="Becerra - River">
+              <h2>Becerra - River</h2>
+              <div class="musica-grupo-meta"><p>540 miembros</p><span class="musica-mensajes-badge">15+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Becerra - River"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="musica-grupo-card">
+              <img src="img/lali.png" alt="Lali en River">
+              <h2>Lali en River</h2>
+              <div class="musica-grupo-meta"><p>110 miembros</p><span class="musica-mensajes-badge">8+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Lali en River"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="musica-grupo-card">
+              <img src="img/nueva49.jpg" alt="Música sin filtros">
+              <h2>Música sin filtros</h2>
+              <div class="musica-grupo-meta"><p>86 miembros</p><span class="musica-mensajes-badge">3+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Música sin filtros"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="musica-grupo-card">
+              <img src="img/nueva58.jpg" alt="Ameri World Tour">
+              <h2>Ameri World Tour</h2>
+              <div class="musica-grupo-meta"><p>214 miembros</p><span class="musica-mensajes-badge">9+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Ameri World Tour"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="musica-hero-lista">
+        <article class="musica-card musica-card-grande">
+          <img src="img/lali.png" alt="Lali en River">
+          <div class="musica-overlay"><h2>Lali nos cuenta como fue llenar 3 estadio River. Todo el detras de la exitosa cantante argentina.</h2></div>
+        </article>
+        <article class="musica-card musica-card-grande">
+          <img src="img/duki.jpg" alt="Duki en vivo">
+          <div class="musica-overlay"><h2>La empresa detrás de los shows de Duki, Bizarrap y más artistas argentinos se asocia con Live Nation</h2></div>
+        </article>
+      </section>
+
+      <section class="musica-albums-seccion">
+        <h2>Top 5 albums semanales:</h2>
+        <div class="musica-albums-carrusel" id="musica-albums-carrusel">
+          <article class="musica-album-card"><img src="img/nueva50.jpg" alt="Babasonicos - Mucho"><h3>Babasonicos - Mucho</h3><span>#1</span></article>
+          <article class="musica-album-card"><img src="img/nueva51.jpg" alt="Patricio Rey y sus Redonditos de Ricota - Oktubre"><h3>Patricio Rey y sus Redonditos de Ricota - Oktubre</h3><span>#2</span></article>
+          <article class="musica-album-card"><img src="img/nueva52.jpg" alt="Tyler, The Creator - Flower Boy"><h3>Tyler, The Creator - Flower Boy</h3><span>#3</span></article>
+          <article class="musica-album-card"><img src="img/nueva53.jpg" alt="Sumo - After Chabón"><h3>Sumo - After Chabón</h3><span>#4</span></article>
+          <article class="musica-album-card"><img src="img/nueva54.jpg" alt="Discos que marcaron época"><h3>Discos que marcaron época</h3><span>#5</span></article>
+        </div>
+      </section>
+
+      <section class="musica-debate-seccion">
+        <h2>Unite y debatí</h2>
+        <p>Sumate a grupos y conecta con personas que comparten tus intereses</p>
+        <div class="musica-debate-carrusel" id="musica-debate-carrusel">
+          <article class="musica-debate-card"><img src="img/nueva54.jpg" alt="Debate sobre canciones top 10"><h3>Debate sobre canciones top 10</h3><span>1.2k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nueva55.jpg" alt="Eventos Lollapalooza"><h3>Eventos Lollapalooza</h3><span>4.7k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nueva56.jpg" alt="Show Divididos"><h3>Show Divididos</h3><span>2k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nueva57.jpg" alt="Hip Hop Classics"><h3>Hip Hop Classics</h3><span>3.5k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nuevo59.jpg" alt="Música clásica en vivo"><h3>Música clásica en vivo</h3><span>1.4k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nuevo60.jpg" alt="Blue Note Jazz Festival"><h3>Blue Note Jazz Festival</h3><span>3.2k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+          <article class="musica-debate-card"><img src="img/nuevo61.jpg" alt="Sonidos del mundo"><h3>Sonidos del mundo</h3><span>1.1k miembros</span><button class="btn-unirse-grupo" type="button">Unirse</button></article>
+        </div>
+      </section>
+
+      <section class="musica-mas">
+        <h3>Noticias que podrian interesarte <span>Musica</span></h3>
+        <article class="musica-nota-mini"><img src="img/thundercat-mac-miller.png" alt="Thundercat y Mac Miller"><div><h4>Thundercat sorprende con una cancion inédita junto a Mac Mill...</h4><p>03/06/2026</p></div></article>
+        <article class="musica-nota-mini"><img src="img/nueva58.jpg" alt="Duki en Ameri World Tour"><div><h4>A un año de Ameri World Tour, Duki nos cuenta el detras de escena...</h4><p>02/06/2026</p></div></article>
+        <article class="musica-nota-mini"><img src="img/the-rolling-stones.png" alt="The Rolling Stones"><div><h4>The Rolling Stone y Marvell lanzan una coleccion de vinilos con...</h4><p>01/06/2026</p></div></article>
+      </section>
+    </div>
+
+    <div id="vista-cine" style="display: none;" class="vista-cine-container">
+      <section class="cine-grupos-seccion">
+        <h1>Tus grupos de cine:</h1>
+        <div class="cine-grupos-carrusel">
+          <div class="cine-grupos-track" id="cine-grupos-track">
+            <article class="cine-grupo-card">
+              <img src="img/nuevo39.jpg" alt="Jueves de cine">
+              <h2>Jueves de cine</h2>
+              <div class="cine-grupo-meta"><p>118 miembros</p><span class="cine-mensajes-badge">6+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Jueves de cine"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="cine-grupo-card">
+              <img src="img/nuevo40.jpg" alt="Fanáticos del cine">
+              <h2>Fanáticos del cine</h2>
+              <div class="cine-grupo-meta"><p>108 miembros</p><span class="cine-mensajes-badge">4+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Fanáticos del cine"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="cine-grupo-card">
+              <img src="img/nuevo41.jpg" alt="La banda de Marvel">
+              <h2>La banda de Marvel</h2>
+              <div class="cine-grupo-meta"><p>235 miembros</p><span class="cine-mensajes-badge">8+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de La banda de Marvel"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="cine-grupo-card">
+              <img src="img/nuevo42.jpg" alt="Toy Story Fans">
+              <h2>Toy Story Fans</h2>
+              <div class="cine-grupo-meta"><p>179 miembros</p><span class="cine-mensajes-badge">3+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Toy Story Fans"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="cine-grupo-card">
+              <img src="img/nuevo8.jpg" alt="Spider-Man Fans">
+              <h2>Spider-Man Fans</h2>
+              <div class="cine-grupo-meta"><p>290 miembros</p><span class="cine-mensajes-badge">9+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Spider-Man Fans"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="cine-grupo-card">
+              <img src="img/nuevo10.jpeg" alt="Series y maratones">
+              <h2>Series y maratones</h2>
+              <div class="cine-grupo-meta"><p>142 miembros</p><span class="cine-mensajes-badge">5+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Series y maratones"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="cine-hero-lista">
+        <article class="cine-card cine-card-grande">
+          <img src="img/nuevo8.jpg" alt="Spider-Man en la ciudad">
+          <div class="cine-overlay">
+            <h2>Te contamos 10 datos que no sabias sobre Spider-Man: De regreso a casa</h2>
+          </div>
+        </article>
+
+        <article class="cine-card cine-card-grande">
+          <img src="img/nuevo9.jpeg" alt="Escena de una serie en Netflix">
+          <div class="cine-overlay">
+            <h2>Esperando la carroza vuelve al catalogo de Netflix</h2>
+          </div>
+        </article>
+
+        <article class="cine-card cine-card-grande">
+          <img src="img/nuevo10.jpeg" alt="Estrenos de HBO Max">
+          <div class="cine-overlay">
+            <h2>Que ver en HBO Max: 5 series y peliculas que no te podes perder</h2>
+          </div>
+        </article>
+
+      </section>
+
+      <section class="cine-debate-seccion">
+        <h2>Unite y debatí</h2>
+        <p>Sumate a grupos y conecta con personas que comparten tus intereses</p>
+        <div class="cine-debate-carrusel" id="cine-debate-carrusel">
+          <article class="cine-debate-card">
+            <img src="img/nuevo43.jpg" alt="Debate top 10 peliculas Al Pacino">
+            <h3>Debate top 10 peliculas Al Pacino</h3><span>1.2k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+          <article class="cine-debate-card">
+            <img src="img/nuevo44.jpg" alt="Cine Argentino">
+            <h3>Cine Argentino</h3><span>4.7k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+          <article class="cine-debate-card">
+            <img src="img/nuevo45.jpg" alt="Cineando con Walter">
+            <h3>Cineando con Walter</h3><span>2k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+          <article class="cine-debate-card">
+            <img src="img/nuevo46.jpg" alt="Series que amamos">
+            <h3>Series que amamos</h3><span>3.5k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+          <article class="cine-debate-card">
+            <img src="img/nuevo47.jpg" alt="Stranger Things: teorías y spoilers">
+            <h3>Stranger Things: teorías y spoilers</h3><span>5.3k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+          <article class="cine-debate-card">
+            <img src="img/nuevo48.jpg" alt="Cine de Christopher Nolan">
+            <h3>Cine de Christopher Nolan</h3><span>2.8k miembros</span>
+            <button class="btn-unirse-grupo" type="button">Unirse</button>
+          </article>
+        </div>
+      </section>
+
+      <section class="cine-mas">
+        <h3>Noticias que podrian interesarte <span>Cine/series</span></h3>
+
+        <article class="cine-nota-mini">
+          <img src="img/nuevo12.jpeg" alt="Pelicula de terror">
+          <div>
+            <h4>Las 6 mejores peliculas de terror en los ultimos seis anos...</h4>
+            <p>Streaming</p>
+          </div>
+        </article>
+
+        <article class="cine-nota-mini">
+          <img src="img/nuevo13.jpeg" alt="Quentin Tarantino">
+          <div>
+            <h4>Quentin Tarantino regresa a la actuacion...</h4>
+            <p>Cine</p>
+          </div>
+        </article>
+
+        <article class="cine-nota-mini">
+          <img src="img/nuevo14.jpeg" alt="Toy Story">
+          <div>
+            <h4>Nuevo estreno: Toy Story 5 ya esta en cines...</h4>
+            <p>Disney</p>
+          </div>
+        </article>
+      </section>
+    </div>
+    
+    <div id="vista-nota" style="display: none;">
+      <div class="grid-noticia-dos-columnas">
+        <article class="articulo-principal">
+          <div class="articulo-header-bloque">
+            <h1 class="articulo-titulo-h1" id="dinamico-titulo">
+              La empresa detrÃ¡s de los shows de Duki, Bizarrap y mÃ¡s artistas argentinos se asocia con Live Nation
+            </h1>
+            <button class="btn-marcador-guardar" id="btn-guardar-marcador">
+              <i class="fa-regular fa-bookmark"></i>
+            </button>
+          </div>
+          <p class="articulo-bajada" id="dinamico-bajada">
+            La compaÃ±Ã­a estadounidense describiÃ³ la operaciÃ³n como "una alianza estratÃ©gica orientada a expandir la mÃºsica en espaÃ±ol en la Argentina y en la regiÃ³n".
+          </p>
+          <p class="articulo-autor-fecha" id="dinamico-autor">
+            De Lucas Santomero - 03/05/2026
+          </p>
+          <div class="articulo-imagen-caja">
+            <img src="img/duki.jpg" alt="Contenido" id="dinamico-imagen">
+            <span class="articulo-epigrafe" id="dinamico-epigrafe">Duki en Buenos Aires Trap 2024. Foto: Mica Garate para Indie Hoy</span>
+          </div>
+          <div class="articulo-cuerpo-texto" id="dinamico-cuerpo">
+          </div>
+
+          <section class="comentarios-noticia" id="comentarios-noticia-duki">
+            <div class="comentarios-cabecera">
+              <h3>Comentarios <span id="comentarios-contador">150</span></h3>
+            </div>
+
+            <div class="comentario-input-row">
+              <img src="img/usuario.png" alt="Tu perfil">
+              <div class="comentario-input-box">Escribe un comentario...</div>
+            </div>
+
+            <div class="comentarios-lista" id="comentarios-lista">
+              <article class="comentario-card">
+                <img src="img/usuario2.png" alt="DanteLopez_">
+                <div class="comentario-contenido">
+                  <div class="comentario-meta">
+                    <strong>DanteLopez_</strong>
+                    <span>Hace 10 min</span>
+                  </div>
+                  <p>Que locura lo de Duki, esto puede abrir muchas puertas para los artistas de aca.</p>
+                </div>
+                <button class="comentario-like" type="button" aria-label="Me gusta">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </article>
+
+              <article class="comentario-card">
+                <img src="img/usuario3.png" alt="Charoo_04">
+                <div class="comentario-contenido">
+                  <div class="comentario-meta">
+                    <strong>Charoo_04</strong>
+                    <span>Hace 22 min</span>
+                  </div>
+                  <p>Ojala anuncien mas fechas, el Movistar le queda chico ya.</p>
+                </div>
+                <button class="comentario-like" type="button" aria-label="Me gusta">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </article>
+
+              <article class="comentario-card">
+                <img src="img/usuario4.png" alt="Martina_Indie">
+                <div class="comentario-contenido">
+                  <div class="comentario-meta">
+                    <strong>Martina_Indie</strong>
+                    <span>Hace 31 min</span>
+                  </div>
+                  <p>Me encanta que la escena argentina empiece a tener este nivel de produccion.</p>
+                </div>
+                <button class="comentario-like" type="button" aria-label="Me gusta">
+                  <i class="fa-regular fa-heart"></i>
+                </button>
+              </article>
+            </div>
+
+            <button class="btn-ver-comentarios" type="button">Ver mas comentarios</button>
+          </section>
+        </article>
+        <aside class="sidebar-noticia">
+          <div class="chat-noticia-lateral" id="chat-noticia-duki">
+            <button class="btn-toggle-chat-lateral" id="btn-toggle-chat-lateral" type="button" aria-controls="chat-en-vivo-panel" aria-expanded="true">OCULTAR CHAT</button>
+
+            <div class="chat-en-vivo-panel" id="chat-en-vivo-panel">
+              <div class="chat-en-vivo-header">
+                <h3>Chat en vivo</h3>
+                <i class="fa-solid fa-user-group" aria-hidden="true"></i>
+              </div>
+
+              <div class="chat-en-vivo-mensajes">
+                <article class="chat-en-vivo-msg">
+                  <img src="img/usuario5.jpg" alt="Lucia">
+                  <div>
+                    <div class="chat-burbuja">
+                      <strong>Lucia</strong>
+                      <p>Que locura esto, Live Nation se queda con todo el mercado latino.</p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="chat-en-vivo-msg">
+                  <img src="img/usuario6.png" alt="Tomas">
+                  <div>
+                    <div class="chat-burbuja">
+                      <strong>Tomas</strong>
+                      <p>Lauria viene armando shows en Argentina y ahora es una maquina total.</p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="chat-en-vivo-msg">
+                  <img src="img/usuario7.png" alt="Mica">
+                  <div>
+                    <div class="chat-burbuja">
+                      <strong>Mica</strong>
+                      <p>Espero que esto no haga que las entradas de Duki vuelvan a salir carisimas.</p>
+                    </div>
+                  </div>
+                </article>
+
+                <article class="chat-en-vivo-msg">
+                  <img src="img/usuario8.png" alt="Nico">
+                  <div>
+                    <div class="chat-burbuja">
+                      <strong>Nico</strong>
+                      <p>Lo de Bizarrap es otro nivel, las Music Sessions lo pusieron en el mapa mundial.</p>
+                    </div>
+                  </div>
+                </article>
+              </div>
+
+              <form class="chat-en-vivo-input" id="chat-en-vivo-form">
+                <input id="chat-en-vivo-texto" type="text" maxlength="240" placeholder="Escribe un mensaje" aria-label="Escribe un mensaje">
+                <button type="button" aria-label="Elegir emoji"><i class="fa-regular fa-face-smile"></i></button>
+                <button type="submit" aria-label="Enviar mensaje"><i class="fa-solid fa-play"></i></button>
+              </form>
+            </div>
+          </div>
+
+          <div class="bloque-recomendados">
+            <h3 class="recomendados-titulo-seccion">Recomendado para vos</h3>
+            <div class="recomendados-lista-feed" id="algoritmo-feed">
+              <div class="card-recomendado-mini">
+                <img src="img/Toy Story 2.png" alt="Toy Story 5">
+                <div class="card-recomendado-info">
+                  <h4>Nuevo esteno:Toy Story 5 ya esta en cines</h4>
+                </div>
+              </div>
+              <div class="card-recomendado-mini">
+                <img src="img/Museo Nacional de Bellas Artes.png" alt="Bellas Artes">
+                <div class="card-recomendado-info">
+                  <h4>Un finde lleno de arte, el museo de Bellas Artes...</h4>
+                </div>
+              </div>
+              <div class="card-recomendado-mini">
+                <img src="img/thundercat-mac-miller.png" alt="Mac Miller">
+                <div class="card-recomendado-info">
+                  <h4>Thundercat sorprende con una canciÃ³n inÃ©dita junto a Mac Miller</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+
+    <div id="vista-calendario" style="display: none;">
+    <div class="calendario-container">
+        <div class="calendario-iconos-top">
+            <button class="icono-opcion" id="btn-tab-tickets" type="button" aria-label="Ver tus tickets" aria-pressed="false">
+                <i class="fa-solid fa-ticket-simple" aria-hidden="true"></i>
+                <span class="linea-indicadora"></span>
+            </button>
+            <button class="icono-opcion activo-azul" id="btn-tab-calendario" type="button" aria-label="Ver calendario" aria-pressed="true">
+                <i class="fa-regular fa-calendar-days" aria-hidden="true"></i>
+                <span class="linea-indicadora"></span>
+            </button>
+        </div>
+        
+        <div class="calendario-main-grid" id="bloque-calendario-grilla">
+            <div class="seccion-mes-grid">
+                <div class="selector-meses">
+                    <span id="mes-texto-prev" class="mes-lateral">Noviembre</span>
+                    <button id="btn-prev-mes-cal" class="btn-flecha">&lt;</button>
+                    <span id="mes-texto-cal" class="mes-central">Diciembre</span>
+                    <button id="btn-next-mes-cal" class="btn-flecha">&gt;</button>
+                    <span id="mes-texto-next" class="mes-lateral">Enero</span>
+                </div>
+                <div class="dias-semana-row">
+                    <div>lun</div><div>mart</div><div>mie</div><div>jue</div><div>vier</div><div>sab</div><div>dom</div>
+                </div>
+                <div class="dias-num-grid">
+                    <div class="dia-apagado">30</div>
+                    <div>1</div><div>2</div><div>3</div><div>4</div>
+                    <div class="dia-con-evento evento-musica-img"><span>5</span></div>
+                    <div>6</div>
+                    <div>7</div><div>8</div><div>9</div>
+                    <div class="dia-con-evento evento-festival-img"><span>10</span></div>
+                    <div>11</div><div>12</div><div>13</div>
+                    <div>14</div><div>15</div><div>16</div><div>17</div><div>18</div><div>19</div><div>20</div>
+                    <div>21</div><div>22</div><div>23</div><div>24</div><div>25</div><div>26</div><div>27</div>
+                    <div>28</div><div>29</div><div>30</div><div>31</div>
+                    <div class="dia-apagado">1</div><div class="dia-apagado">2</div><div class="dia-apagado">3</div>
+                </div>
+            </div>
+            <div class="seccion-proximos-sidebar">
+                <h3 class="titulo-proximos"><i class="fa-regular fa-calendar"></i><span class="titulo-proximos-desktop">Últimos eventos</span><span class="titulo-proximos-mobile">Tus próximos eventos</span></h3>
+                <div class="categorias-leyenda">
+                    <span class="filtro-todo"><span class="bloque-color cine"></span><span class="leyenda-desktop">Cine</span><span class="leyenda-mobile">Todo</span></span>
+                    <span class="filtro-cultura"><span class="bloque-color festival"></span><span class="leyenda-desktop">Festival</span><span class="leyenda-mobile">Cultura</span></span>
+                    <span class="filtro-musica"><span class="bloque-color musica"></span>Musica</span>
+                </div>
+                <div class="contenedor-lista-eventos"></div>
+            </div>
+        </div>
+
+        <div id="bloque-calendario-extra">
+        <section class="calendario-resumen" aria-label="Resumen de actividad">
+            <div><i class="fa-regular fa-calendar"></i><strong>6</strong><span>eventos guardados</span></div>
+            <div><i class="fa-solid fa-user-group"></i><strong>2</strong><span>grupos activos</span></div>
+            <div><i class="fa-solid fa-star"></i><strong>3</strong><span>eventos recomendados</span></div>
+            <div><i class="fa-solid fa-location-dot"></i><strong>6</strong><span>eventos cerca tuyo</span></div>
+        </section>
+
+        <section class="calendario-descubrir">
+            <h2><span class="cal-descubrir-desktop">No te lo pierdas</span><span class="cal-descubrir-mobile">Eventos que te podrían interesar</span></h2>
+            <div class="calendario-eventos-destacados">
+                <article class="cal-event-card cine">
+                    <img src="img/nuevo15.png" alt="Toy Story 5">
+                    <button class="cal-event-bookmark" type="button" aria-label="Guardar Toy Story 5"><i class="fa-regular fa-bookmark"></i></button><div class="cal-event-info"><span>Cine</span><h3>Toy Story 5</h3><p>18 de diciembre</p></div>
+                </article>
+                <article class="cal-event-card festival">
+                    <img src="img/nuevo16.png" alt="Noche de museos">
+                    <button class="cal-event-bookmark" type="button" aria-label="Guardar Noche de los museos"><i class="fa-regular fa-bookmark"></i></button><div class="cal-event-info"><span>Cultura</span><h3>Noche de los museos</h3><p>21 de diciembre</p></div>
+                </article>
+                <article class="cal-event-card musica">
+                    <img src="img/nuevo17.png" alt="Airbag en vivo">
+                    <button class="cal-event-bookmark" type="button" aria-label="Guardar Airbag en vivo"><i class="fa-regular fa-bookmark"></i></button><div class="cal-event-info"><span>Música</span><h3>Airbag en vivo</h3><p>28 de diciembre</p></div>
+                </article>
+            </div>
+        </section>
+
+        <section class="calendario-categorias">
+            <h2>Explorar por categoría</h2>
+            <div>
+                <button class="cal-categoria cine" type="button"><i class="fa-solid fa-clapperboard"></i><span>Cine</span><small>Próximos estrenos</small></button>
+                <button class="cal-categoria festival" type="button"><i class="fa-solid fa-landmark"></i><span>Cultura</span><small>Arte y experiencias</small></button>
+                <button class="cal-categoria musica" id="btn-categoria-musica" type="button"><i class="fa-solid fa-music"></i><span>Música</span><small>Shows y festivales</small></button>
+            </div>
+        </section>
+        </div>
+
+        <section class="tickets-main-grid" id="bloque-calendario-tickets" style="display: none;" aria-label="Tus tickets">
+            <article class="ticket-card">
+                <div class="ticket-img-wrapper">
+                    <img src="img/nTvg.png" alt="No Te Va Gustar">
+                    <div class="ticket-fecha-badge bg-verde"><span class="num">05</span><span class="mes">dic</span></div>
+                </div>
+                <h3>No Te Va Gustar</h3><p>Movistar Arena · 21:00</p>
+            </article>
+            <article class="ticket-card">
+                <div class="ticket-img-wrapper">
+                    <img src="img/camilo.png" alt="Camilo">
+                    <div class="ticket-fecha-badge bg-verde"><span class="num">10</span><span class="mes">dic</span></div>
+                </div>
+                <h3>Camilo</h3><p>Estadio Vélez · 20:30</p>
+            </article>
+            <article class="ticket-card">
+                <div class="ticket-img-wrapper">
+                    <img src="img/The_Amazing_Spider_Man 1.png" alt="The Amazing Spider-Man">
+                    <div class="ticket-fecha-badge bg-violeta"><span class="num">13</span><span class="mes">dic</span></div>
+                </div>
+                <h3>The Amazing Spider-Man</h3><p>Cine Gaumont · 19:00</p>
+            </article>
+            <article class="ticket-card">
+                <div class="ticket-img-wrapper">
+                    <img src="img/La Rural.png" alt="Muestra de arte en La Rural">
+                    <div class="ticket-fecha-badge bg-naranja"><span class="num">15</span><span class="mes">dic</span></div>
+                </div>
+                <h3>Muestra de arte</h3><p>La Rural · 18:00</p>
+            </article>
+            <article class="ticket-card">
+                <div class="ticket-img-wrapper">
+                    <img src="img/Museo Nacional de Bellas Artes.png" alt="Museo Nacional de Bellas Artes">
+                    <div class="ticket-fecha-badge bg-violeta"><span class="num">21</span><span class="mes">dic</span></div>
+                </div>
+                <h3>Noche de los museos</h3><p>Buenos Aires · 19:30</p>
+            </article>
+        </section>
+
+        <section class="calendario-musica-tickets" id="bloque-calendario-musica" style="display: none;" aria-label="Tickets de música guardados">
+            <header class="cal-musica-encabezado">
+                <i class="fa-solid fa-music" aria-hidden="true"></i>
+                <div><span>CALENDARIO</span><h1>MÚSICA</h1><p>Acá vas a encontrar todos los eventos de música que guardaste</p></div>
+            </header>
+            <div class="cal-musica-layout">
+                <aside class="cal-musica-filtros" aria-label="Filtros de tickets de música">
+                    <span class="cal-filtro-titulo">CICLOS</span>
+                    <button class="activo" type="button"><i class="fa-regular fa-calendar-check"></i>Todos <small>15</small></button>
+                    <span class="cal-filtro-titulo">FILTRAR POR</span>
+                    <button type="button"><i class="fa-regular fa-clock"></i>Próximos <small>5</small></button>
+                    <button type="button"><i class="fa-regular fa-calendar"></i>Este mes <small>3</small></button>
+                    <button type="button"><i class="fa-regular fa-calendar-days"></i>Próximo mes <small>2</small></button>
+                    <span class="cal-filtro-titulo separador">ORDENAR POR</span>
+                    <select aria-label="Ordenar tickets"><option>Fecha</option><option>Nombre</option></select>
+                </aside>
+                <div class="cal-musica-lista">
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo62.jpg" alt="No Te Va Gustar"><h2>NO TE VA GUSTAR</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">04 JUL 2026</span><p><i class="fa-regular fa-clock"></i>21:00 hs</p><p><i class="fa-solid fa-location-dot"></i>Estadio UNO</p><div><b>VIP</b><em>Sección 6A</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo63.jpg" alt="Rosalía"><h2>ROSALÍA</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">08 JUL 2026</span><p><i class="fa-regular fa-clock"></i>20:00 hs</p><p><i class="fa-solid fa-location-dot"></i>Movistar Arena</p><div><b>CAMPO</b><em>Sección 6A</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo64.jpg" alt="Camilo"><h2>CAMILO</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">26 OCT 2026</span><p><i class="fa-regular fa-clock"></i>20:30 hs</p><p><i class="fa-solid fa-location-dot"></i>Movistar Arena</p><div><b>CAMPO</b><em>Sección 15A/B</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo65.jpg" alt="Soda Stereo"><h2>SODA STEREO</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">08 JUL 2026</span><p><i class="fa-regular fa-clock"></i>19:30 hs</p><p><i class="fa-solid fa-location-dot"></i>Movistar Arena</p><div><b>VIP</b><em>Sección 6A</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo66.jpg" alt="Airbag"><h2>AIRBAG</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">08 JUL 2026</span><p><i class="fa-regular fa-clock"></i>21:00 hs</p><p><i class="fa-solid fa-location-dot"></i>Estadio UNO</p><div><b>VIP</b><em>Sección 6A</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                    <article class="cal-musica-ticket">
+                        <div class="cal-ticket-imagen"><img src="img/nuevo67.jpg" alt="Beéle"><h2>BEÉLE</h2></div><div class="cal-ticket-contenido"><span class="cal-ticket-fecha">31 AGOST 2026</span><p><i class="fa-regular fa-clock"></i>22:30 hs</p><p><i class="fa-solid fa-location-dot"></i>Gran Rex</p><div><b>CAMPO</b><em>Sección 5B</em><button type="button"><i class="fa-solid fa-ticket-simple"></i>Ver entrada</button></div></div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+    </div>
+</div>
+
+<div id="vista-ticket-musica" style="display: none;" class="vista-ticket-musica">
+    <div class="entrada-efecto" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span><span></span></div>
+    <div class="ticket-mobile-marca" aria-hidden="true"><i class="fa-solid fa-ticket-simple"></i></div>
+    <section class="ticket-confirmacion" aria-live="polite">
+        <span class="ticket-confirmacion-icono"><i class="fa-solid fa-check"></i></span>
+        <div><h1>¡Estas anotado!</h1><p>Ya tenes tu entrada para el show. Nos vemos ahi.</p></div>
+    </section>
+
+    <button class="btn-volver-entrada" id="btn-volver-tickets-musica" type="button"><i class="fa-solid fa-arrow-left"></i>Volver al evento</button>
+
+    <article class="entrada-musica" aria-label="Tu entrada para el evento">
+        <span class="ticket-muesca ticket-muesca-izquierda" aria-hidden="true"></span>
+        <span class="ticket-muesca ticket-muesca-derecha" aria-hidden="true"></span>
+        <div class="entrada-musica-cuerpo">
+            <section class="entrada-musica-show">
+                <span>SHOW</span>
+                <img id="entrada-musica-imagen" src="img/nuevo62.jpg" alt="No Te Va Gustar">
+                <h2 id="entrada-musica-artista">NO TE VA GUSTAR</h2>
+            </section>
+            <section class="entrada-musica-datos">
+                <div><i class="fa-regular fa-calendar-days"></i><p>FECHA</p><strong id="entrada-musica-fecha">04 JUL 2026</strong></div>
+                <div><i class="fa-solid fa-ticket-simple"></i><p>TIPO DE ENTRADA</p><strong id="entrada-musica-tipo">VIP</strong></div>
+                <div><i class="fa-regular fa-clock"></i><p>HORA</p><strong id="entrada-musica-hora">21:00 hs</strong></div>
+                <div><i class="fa-solid fa-chair"></i><p>SECCION</p><strong id="entrada-musica-seccion">SECCION 6A</strong></div>
+                <div class="entrada-musica-ubicacion"><i class="fa-solid fa-location-dot"></i><p>UBICACION</p><strong id="entrada-musica-lugar">ESTADIO UNO</strong><small id="entrada-musica-ciudad">La Plata</small></div>
+            </section>
+        </div>
+        <footer class="entrada-musica-pie">
+            <div class="entrada-comprador"><i class="fa-regular fa-user"></i><p>NOMBRE</p><strong>JUAN PEREZ</strong></div>
+            <div class="entrada-codigo"><div class="entrada-codigo-barras" aria-hidden="true"></div><strong id="entrada-musica-codigo">IH23X7K9</strong><small>Presentá este código en el acceso. No es necesario imprimir.</small></div>
+        </footer>
+    </article>
+
+    <button class="btn-descargar-entrada" id="btn-descargar-entrada" type="button"><i class="fa-solid fa-download"></i>DESCARGAR TICKET</button>
+</div>
+
+<div id="vista-eventos" style="display: none;" class="vista-eventos-container">
+    <section class="eventos-grupos-seccion">
+        <h1>Tus grupos de eventos:</h1>
+        <div class="eventos-grupos-carrusel" aria-label="Carrusel de grupos de eventos">
+        <div class="eventos-grupos-track" id="eventos-grupos-track">
+            <article class="evento-grupo-card">
+                <img src="img/nuevo18.jpg" alt="Baba en La Plata">
+                <h2>Baba en La Plata</h2>
+                <div class="evento-grupo-meta"><p>65 miembros</p><span class="evento-mensajes-badge">6+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Baba en La Plata"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo19.jpg" alt="Lali en River">
+                <h2>Lali en River</h2>
+                <div class="evento-grupo-meta"><p>110 miembros</p><span class="evento-mensajes-badge">4+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Lali en River"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo20.jpg" alt="Hernán Cattáneo">
+                <h2>Hernán Cattáneo</h2>
+                <div class="evento-grupo-meta"><p>253 miembros</p><span class="evento-mensajes-badge">8+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Hernán Cattáneo"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo21.jpg" alt="Obsesión">
+                <h2>Obsesión</h2>
+                <div class="evento-grupo-meta"><p>233 miembros</p><span class="evento-mensajes-badge">3+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Obsesión"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/duki.jpg" alt="Duki en Buenos Aires">
+                <h2>Duki en Buenos Aires</h2>
+                <div class="evento-grupo-meta"><p>190 miembros</p><span class="evento-mensajes-badge">9+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Duki en Buenos Aires"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo25.jpg" alt="Rosalía World Tour">
+                <h2>Rosalía World Tour</h2>
+                <div class="evento-grupo-meta"><p>87 miembros</p><span class="evento-mensajes-badge">5+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Rosalía World Tour"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo26.jpg" alt="Argentina Game Show">
+                <h2>Argentina Game Show</h2>
+                <div class="evento-grupo-meta"><p>142 miembros</p><span class="evento-mensajes-badge">7+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Argentina Game Show"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+            <article class="evento-grupo-card">
+                <img src="img/nuevo27.jpg" alt="Ed Sheeran en Huracán">
+                <h2>Ed Sheeran en Huracán</h2>
+                <div class="evento-grupo-meta"><p>96 miembros</p><span class="evento-mensajes-badge">2+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Ed Sheeran en Huracán"><i class="fa-regular fa-comment-dots"></i></button></div>
+            </article>
+        </div>
+        </div>
+    </section>
+
+    <section class="eventos-lista-seccion">
+        <h2>Proximos eventos</h2>
+        <article class="evento-lista-item">
+            <img src="img/nuevo22.jpg" alt="Exposición Rural">
+            <div class="evento-fecha-grande"><strong>16</strong><span>JUL</span></div>
+            <div class="evento-lista-info"><span class="evento-tipo cultura">CULTURA</span><h3>Exposición Rural</h3><p>09:00 a 20:00 hs . Rural de Palermo</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="exposicion-rural" aria-label="Guardar Exposición Rural"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+        <article class="evento-lista-item">
+            <img src="img/nuevo23.jpg" alt="Fito Páez">
+            <div class="evento-fecha-grande"><strong>18</strong><span>JUL</span></div>
+            <div class="evento-lista-info"><span class="evento-tipo musica">MUSICA</span><h3>Fito Páez</h3><p>21:00 hs . Movistar Arena</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="fito-paez" aria-label="Guardar Fito Páez"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+        <article class="evento-lista-item">
+            <img src="img/nuevo24.jpg" alt="El Mato a un Policia Motorizado">
+            <div class="evento-fecha-grande"><strong>20</strong><span>JUL</span></div>
+            <div class="evento-lista-info"><span class="evento-tipo musica">MUSICA</span><h3>El Mato a un Policia Motorizado</h3><p>21:00 hs . C Art Media</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="el-mato" aria-label="Guardar El Mato a un Policia Motorizado"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+    </section>
+
+    <section class="eventos-interes-seccion">
+        <h2><span>Eventos</span> que podrian interesarte</h2>
+        <article class="evento-interes-item">
+            <img src="img/nuevo25.jpg" alt="Rosalía - Motomami World Tour">
+            <div><h3>Rosalía - Motomami World Tour</h3><p>1 de agosto de 2026 . 21:00 hs</p><p>Movistar Arena</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="rosalia-motomami" aria-label="Guardar Rosalía - Motomami World Tour"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+        <article class="evento-interes-item">
+            <img src="img/nuevo26.jpg" alt="Argentina Game Show">
+            <div><h3>Argentina Game Show (AGS)</h3><p>10 de octubre de 2026 . 12:00 hs</p><p>Costa Salguero</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="argentina-game-show" aria-label="Guardar Argentina Game Show"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+        <article class="evento-interes-item">
+            <img src="img/nuevo27.jpg" alt="Ed Sheeran - Mathematics Tour">
+            <div><h3>Ed Sheeran - Mathematics Tour</h3><p>29 de noviembre de 2026 . 21:00 hs</p><p>Estadio Huracán</p></div>
+            <button class="btn-guardar-evento" type="button" data-evento-id="ed-sheeran" aria-label="Guardar Ed Sheeran - Mathematics Tour"><i class="fa-regular fa-bookmark"></i></button>
+        </article>
+    </section>
+</div>
+
+<div id="vista-guardados" style="display: none;" class="vista-guardados-container">
+    <section class="guardados-full-header">
+        <h2>Guardados</h2>
+        <p>Tus noticias y archivos pendientes</p>
+    </section>
+
+    <div class="guardados-tabs" role="tablist" aria-label="Filtros de guardados">
+        <button class="guardado-tab activo" type="button" data-filtro-guardado="todos">Todos</button>
+        <button class="guardado-tab" type="button" data-filtro-guardado="musica">Musica</button>
+        <button class="guardado-tab" type="button" data-filtro-guardado="cultura">Cultura</button>
+        <button class="guardado-tab" type="button" data-filtro-guardado="cine-series">Cine/series</button>
+    </div>
+
+    <section class="guardados-eventos-seccion" id="guardados-eventos-seccion" hidden>
+        <h2>Eventos guardados</h2>
+        <div class="guardados-eventos-lista" id="guardados-eventos-lista"></div>
+    </section>
+
+    <div class="guardados-noticias-lista" id="guardados-noticias-dinamicas"></div>
+
+    <div class="guardados-noticias-lista">
+        <article class="guardado-noticia-item" data-tipo-guardado="cultura">
+            <div class="guardado-noticia-texto">
+                <span class="guardado-categoria cultura">Cultura</span>
+                <h3>24 de junio: un dia que une a idolos y momentos historicos argentinos</h3>
+                <p>Redaccion IndieHoy - Ayer</p>
+            </div>
+            <img src="img/Museo Nacional de Bellas Artes.png" alt="Cultura argentina">
+            <button class="btn-bookmark activo" type="button" aria-label="Quitar de guardados">
+                <i class="fa-solid fa-bookmark"></i>
+            </button>
+        </article>
+
+        <article class="guardado-noticia-item" data-tipo-guardado="cultura">
+            <div class="guardado-noticia-texto">
+                <span class="guardado-categoria cultura">Cultura</span>
+                <h3>6 muestras de arte para visitar este mes en Buenos Aires</h3>
+                <p>Agenda Indie - 09:20</p>
+            </div>
+            <img src="img/viole.png" alt="Muestra de arte">
+            <button class="btn-bookmark activo" type="button" aria-label="Quitar de guardados">
+                <i class="fa-solid fa-bookmark"></i>
+            </button>
+        </article>
+    </div>
+</div>
+
+<div id="vista-grupos" style="display: none;" class="vista-grupos-container">
+    <section class="grupos-header">
+        <h2>Tus chats</h2>
+        <p>Conecta con la comunidad indie</p>
+    </section>
+
+    <div class="grupos-tabs" role="tablist" aria-label="Filtros de chats">
+        <button class="grupo-tab activo" type="button" data-filtro-grupo="todos">Todos</button>
+        <button class="grupo-tab" type="button" data-filtro-grupo="grupos">Grupos</button>
+        <button class="grupo-tab" type="button" data-filtro-grupo="no-leidos">No leidos <span>41</span></button>
+        <button class="grupo-tab" type="button" data-filtro-grupo="solicitudes">Solicitudes</button>
+    </div>
+
+    <div class="grupos-lista">
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="directo">
+            <img src="img/usuario2.png" alt="DanteLopez_">
+            <div class="grupo-chat-info">
+                <h3>DanteLopez_</h3>
+                <p>Genial, nos vemos en el Movistar!</p>
+            </div>
+            <span class="grupo-chat-hora">10:25</span>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="directo no-leidos">
+            <img src="img/usuario3.png" alt="Charoo_04">
+            <div class="grupo-chat-info">
+                <h3>Charoo_04</h3>
+                <p>Ya escuchaste el Tiny de Milo J?</p>
+            </div>
+            <div class="grupo-chat-meta">
+                <span class="grupo-chat-hora">11:56</span>
+                <span class="grupo-badge">3</span>
+            </div>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="grupos no-leidos">
+            <img src="img/indios.png" alt="La banda de los indios">
+            <div class="grupo-chat-info">
+                <h3>La banda de los indios</h3>
+                <p>Martita_Indie: jajaja es buenisima</p>
+            </div>
+            <div class="grupo-chat-meta">
+                <span class="grupo-chat-hora">Ayer</span>
+                <span class="grupo-badge">21</span>
+            </div>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="grupos">
+            <img src="img/dukigrupo.png" alt="Duki - Movistar Arena">
+            <div class="grupo-chat-info">
+                <h3>Duki - Movistar Arena</h3>
+                <p>320 miembros</p>
+            </div>
+            <span class="grupo-chat-hora">Lun</span>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="grupos no-leidos">
+            <img src="img/miloj.png" alt="Milo J - Fans">
+            <div class="grupo-chat-info">
+                <h3>Milo J - Fans</h3>
+                <p>430 miembros</p>
+            </div>
+            <div class="grupo-chat-meta">
+                <span class="grupo-chat-hora">Dom</span>
+                <span class="grupo-badge">2</span>
+            </div>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="grupos no-leidos">
+            <img src="img/becerra.png" alt="Maria Becerra - River">
+            <div class="grupo-chat-info">
+                <h3>Maria Becerra - River</h3>
+                <p>540 miembros</p>
+            </div>
+            <div class="grupo-chat-meta">
+                <span class="grupo-chat-hora">Vie</span>
+                <span class="grupo-badge">15</span>
+            </div>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="solicitudes">
+            <img src="img/usuario4.png" alt="Nico_Rodriguezz">
+            <div class="grupo-chat-info">
+                <h3>Nico_Rodriguezz</h3>
+                <p>Te respondio una solicitud</p>
+            </div>
+            <span class="grupo-chat-hora">Hoy</span>
+        </button>
+
+        <button class="grupo-chat-item" type="button" data-tipo-grupo="directo">
+            <img src="img/usuario.png" alt="Indie_Chuchu">
+            <div class="grupo-chat-info">
+                <h3>Indie_Chuchu</h3>
+                <p>Loco, nos vemos ahi amigo?</p>
+            </div>
+            <span class="grupo-chat-hora">Mar</span>
+        </button>
+    </div>
+</div>
+
+    <!-- VISTA PERFIL AGREGADA -->
+    
+
+<div id="vista-perfil" style="display: none;" class="container-perfil">
+
+    <!-- HEADER PERFIL -->
+   <div class="perfil-header">
+    <div class="perfil-info-wrapper">
+        <div class="perfil-avatar-box">
+           <img src="img/usuario.png" alt="Martina Alvarez" class="perfil-avatar-img">
+            <div class="btn-camara">
+                <i class="fa-solid fa-camera"></i>
+            </div>
+        </div>
+        <div class="perfil-info">
+            <h2>Martina Alvarez</h2>
+            <p class="perfil-username">@MartinaAlvarez_user</p>
+            <p class="perfil-bio">Amante de la mÃºsica, el cine y la cultura indie.</p>
+            <div class="perfil-stats">
+                <div class="stat-box">
+                    <strong>123</strong>
+                    <span>Siguiendo</span>
+                </div>
+                <div class="stat-box">
+                    <strong>212</strong>
+                    <span>Seguidores</span>
+                </div>
+                <div class="stat-box">
+                    <strong>4</strong>
+                    <span>Guardados</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="perfil-acciones">
+        <button class="btn-editar">Editar perfil</button>
+    </div>
+</div>
+ 
+
+    <!-- TABS -->
+    <div class="perfil-tabs">
+        <div class="tab-perfil activo" id="tab-perfil-guardados">Guardados</div>
+        <div class="tab-perfil" id="tab-perfil-chats">Chats</div>
+    </div>
+
+    <!-- GUARDADOS -->
+    <div class="perfil-seccion" id="perfil-guardados">
+
+        <h3 class="titulo-seccion-perfil">
+            Tus guardados
+        </h3>
+
+        <div class="grilla-guardados">
+
+            <div class="card-guardado-estirada">
+                <img src="img/zell.png" alt="">
+                <div class="overlay-guardado">
+                    <p>Zell en Malvinas Argentinas</p>
+                </div>
+            </div>
+
+            <div class="card-guardado-estirada">
+                <img src="img/queen.png" alt="">
+                <div class="overlay-guardado">
+                    <p>6 teorÃ­as sobre el significado de...</p>
+                </div>
+            </div>
+
+            <div class="card-guardado-estirada">
+                <img src="img/viole.png" alt="">
+                <div class="overlay-guardado">
+                    <p>6 muestras de arte para visitar en...</p>
+                </div>
+            </div>
+
+            <div class="card-guardado-estirada">
+                <img src="img/duki.jpg" alt="">
+                <div class="overlay-guardado">
+                    <p>La empresa detrÃ¡s de los shows de...</p>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="cont-btn-centro">
+            <button class="btn-azul-pill" id="btn-perfil-guardados-full">
+                Ver todos tus guardados
+            </button>
+        </div>
+
+    </div>
+
+    <!-- CHATS -->
+    <div class="perfil-seccion" id="perfil-chats">
+
+        <div class="chats-header-row">
+
+            <h3 class="titulo-seccion-perfil">
+                Chats
+            </h3>
+
+            <a href="#" class="link-nuevo-chat">
+                Nuevo chat
+            </a>
+
+        </div>
+
+        <div class="lista-chats-perfil">
+
+            <div class="chat-item">
+
+                <img src="img/usuario2.png" alt="Dante">
+
+                <div class="chat-info">
+                    <h4>DanteLopez_</h4>
+                    <p>Â¡Genial, nos vemos en el Movistar!</p>
+                </div>
+
+                <div class="chat-meta">
+                    <span class="chat-time">10:25</span>
+                </div>
+
+            </div>
+
+            <div class="chat-item">
+
+                <img src="img/usuario3.png" alt="Charoo">
+
+                <div class="chat-info">
+                    <h4>Charoo_04</h4>
+                    <p>Â¿Ya escuchaste el Tiny de Milo J?</p>
+                </div>
+
+                <div class="chat-meta">
+                    <span class="chat-time">11:56</span>
+                    <span class="chat-unread">3</span>
+                </div>
+
+            </div>
+
+            <div class="chat-item">
+
+                <img src="img/indios.png" alt="La banda">
+
+                <div class="chat-info">
+                    <h4>La banda de los indios</h4>
+                    <p>Martita_Indie: Jajajaja es buena­sima</p>
+                </div>
+
+                <div class="chat-meta">
+                    <span class="chat-time">Ayer</span>
+                    <span class="chat-unread">27</span>
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="cont-btn-centro">
+            <button class="btn-azul-pill" id="btn-perfil-chats-full">
+                Ver todos los chats
+            </button>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- FIN VISTA PERFIL -->
+
+<div id="vista-cultura" style="display: none;" class="vista-cultura-container">
+    <section class="cultura-grupos-seccion">
+        <h1>Tus grupos de cultura:</h1>
+        <div class="cultura-grupos-carrusel">
+            <div class="cultura-grupos-track" id="cultura-grupos-track">
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo28.jpg" alt="Museos con amigos">
+                    <h2>Museos con amigos</h2>
+                    <div class="cultura-grupo-meta"><p>65 miembros</p><span class="cultura-mensajes-badge">6+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Museos con amigos"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo29.jpg" alt="San Telmo Museos">
+                    <h2>San Telmo Museos</h2>
+                    <div class="cultura-grupo-meta"><p>110 miembros</p><span class="cultura-mensajes-badge">4+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de San Telmo Museos"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo30.jpg" alt="Fútbolismo">
+                    <h2>Fútbolismo</h2>
+                    <div class="cultura-grupo-meta"><p>253 miembros</p><span class="cultura-mensajes-badge">8+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Fútbolismo"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo31.jpg" alt="Pasión por el tango">
+                    <h2>Pasión por el tango</h2>
+                    <div class="cultura-grupo-meta"><p>158 miembros</p><span class="cultura-mensajes-badge">3+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Pasión por el tango"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo35.jpg" alt="Arte contemporáneo">
+                    <h2>Arte contemporáneo</h2>
+                    <div class="cultura-grupo-meta"><p>96 miembros</p><span class="cultura-mensajes-badge">5+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Arte contemporáneo"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+                <article class="cultura-grupo-card">
+                    <img src="img/nuevo32.jpg" alt="Lecturas compartidas">
+                    <h2>Lecturas compartidas</h2>
+                    <div class="cultura-grupo-meta"><p>72 miembros</p><span class="cultura-mensajes-badge">2+</span><button class="btn-grupo-evento-chat" type="button" aria-label="Abrir chat de Lecturas compartidas"><i class="fa-regular fa-comment-dots"></i></button></div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <section class="cultura-hero-lista">
+        <article class="cultura-card cultura-card-grande">
+            <img src="img/nuevo1.jpeg" alt="Hinchas argentinos">
+            <div class="cultura-overlay">
+                <h2>24 de junio: un dia que une a idolos y momentos historicos argentinos</h2>
+            </div>
+        </article>
+
+        <article class="cultura-card cultura-card-grande">
+            <img src="img/nuevo2.jpeg" alt="Artista en escena">
+            <div class="cultura-overlay">
+                <h2>El dia que el mundo conocio la verdadera cultura argentina: el Humahuacazo presente en el mundial de 1974</h2>
+            </div>
+        </article>
+
+        <div class="cultura-doble">
+            <article class="cultura-card">
+                <img src="img/nuevo3.jpeg" alt="Andy Warhol">
+                <div class="cultura-overlay">
+                    <h2>Las 5 obras mas emblematicas de Andy Warhol</h2>
+                </div>
+            </article>
+
+            <article class="cultura-card">
+                <img src="img/nuevo4.jpeg" alt="Muestra de arte">
+                <div class="cultura-overlay">
+                    <h2>6 muestras de arte para visitar estas vacaciones de invierno 2026 en Buenos Aires</h2>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <section class="cultura-debate-seccion">
+        <h2>Unite y debatí</h2>
+        <p>Sumate a grupos y conecta con personas que comparten tus intereses</p>
+        <div class="cultura-debate-carrusel" id="cultura-debate-carrusel">
+            <article class="cultura-debate-card">
+                <img src="img/nuevo36.jpg" alt="Museo Nacional de Bellas Artes">
+                <h3>Museo Nacional de Bellas Artes</h3><span>3.1k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo37.jpg" alt="Experiencias inmersivas">
+                <h3>Experiencias inmersivas</h3><span>1.9k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo38.jpg" alt="Recorridos de arte clásico">
+                <h3>Recorridos de arte clásico</h3><span>1.6k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo32.jpg" alt="Recomendación semanal de libros">
+                <h3>Recomendación semanal de libros</h3><span>2.4k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo33.jpg" alt="Arte Urbano en Buenos Aires">
+                <h3>Arte Urbano en Buenos Aires</h3><span>2.4k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo34.jpg" alt="Recomendación de Comics">
+                <h3>Recomendación de Comics</h3><span>2.2k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+            <article class="cultura-debate-card">
+                <img src="img/nuevo35.jpg" alt="Arte y muralismo">
+                <h3>Arte y muralismo</h3><span>1.8k miembros</span>
+                <button class="btn-unirse-grupo" type="button">Unirse</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="cultura-mas">
+        <h3>Noticias que podrian interesarte <span>Cultura</span></h3>
+
+        <article class="cultura-nota-mini">
+            <img src="img/nuevo5.jpeg" alt="Banana de Maurizio Cattelan">
+            <div>
+                <h4>La banana millonaria de Maurizio Cattelan fue robada...</h4>
+                <p>Arte visual</p>
+            </div>
+        </article>
+
+        <article class="cultura-nota-mini">
+            <img src="img/nuevo6.jpeg" alt="Teatro Opera">
+            <div>
+                <h4>5 obras de teatro para ver este finde en Buenos Aires...</h4>
+                <p>Eventos</p>
+            </div>
+        </article>
+
+        <article class="cultura-nota-mini">
+            <img src="img/nuevo7.jpeg" alt="Mafalda">
+            <div>
+                <h4>Mafalda tendra una experiencia inmersiva en Buenos Aires...</h4>
+                <p>Comics</p>
+            </div>
+        </article>
+    </section>
+</div>
+
+
+  </main>
+
+  <nav class="home-floating-nav" id="app-floating-nav" aria-label="Accesos rápidos">
+    <button class="home-floating-nav-item" id="btn-quick-chats" type="button" aria-label="Chats">
+      <i class="fa-regular fa-comment-dots" aria-hidden="true"></i>
+      <span>Chats</span>
+    </button>
+    <button class="home-floating-nav-item" id="btn-quick-calendario" type="button" aria-label="Calendario">
+      <i class="fa-regular fa-calendar" aria-hidden="true"></i>
+      <span>Calendario</span>
+    </button>
+    <button class="home-floating-nav-item" id="btn-quick-guardados" type="button" aria-label="Guardados">
+      <i class="fa-regular fa-bookmark" aria-hidden="true"></i>
+      <span>Guardados</span>
+    </button>
+  </nav>
+
+  <button class="btn-chat-flotante-mobile" id="btnChatFlotanteMobile" type="button" aria-label="Abrir chats">
+    <i class="fa-regular fa-comments" aria-hidden="true"></i>
+  </button>
+
+  <section class="popup-chats-mobile" id="popupChatsMobile" aria-label="Tus chats">
+    <header><strong>Tus chats</strong><button id="btnCerrarChatsMobile" type="button" aria-label="Cerrar chats">&times;</button></header>
+    <div class="popup-chats-mobile-lista">
+      <div><img src="img/usuario2.png" alt="Dante Lopez"><p><b>DanteLopez_</b><span>Nos vemos en el Movistar!</span></p><time>10:35</time></div>
+      <div><img src="img/usuario3.png" alt="Chano"><p><b>Chano_02</b><span>Ya escuchaste el feat de Milo J?</span></p><time>11:14</time></div>
+      <div><img src="img/indios.png" alt="La banda de los indios"><p><b>La banda de los indios</b><span>Martina_Indie: subieron la...</span></p><time>Ayer</time></div>
+    </div>
+    <button class="btn-ver-todos-chats-mobile" id="btnVerTodosChatsMobile" type="button">Ver todos los chats</button>
+  </section>
+
+  <div class="notificacion-guardado" id="notificacion-guardado" role="status" aria-live="polite" hidden>
+    <i class="fa-solid fa-bookmark" aria-hidden="true"></i><span></span>
+  </div>
+
+  <footer class="footer-principal">
+    <div class="contenedor-limite footer-interior">
+      <div class="footer-col footer-col-links">
+        <div class="footer-pill">INDIE HOY</div>
+        <a href="#">Musica</a>
+        <a href="#">Cine/series</a>
+        <a href="#">Calendario</a>
+        <a href="#">Cultura</a>
+      </div>
+      <div class="footer-col footer-col-social">
+        <div class="footer-pill">SEGUINOS EN:</div>
+        <a href="#"><i class="fa-brands fa-instagram"></i><span>Instagram</span></a>
+        <a href="#"><i class="fa-brands fa-facebook-f"></i><span>Facebook</span></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i><span>Twitter</span></a>
+      </div>
+      <div class="footer-col footer-col-info">
+        <img src="img/Logo_de_Indie_Hoy 2.png" alt="Indie Hoy Logo" class="logo-footer">
+        <div class="footer-links-mini">
+          <a href="#">CONTACTOS</a>
+          <a href="#">PRIVACIDAD</a>
+          <a href="#">TERMINOS DE USO</a>
+          <a href="#">PUBLICIDAD</a>
+        </div>
+        <p class="footer-legal">
+          Indie Hoy es un medio digital especializado en noticias culturales y entretenimiento.
+          Todos los derechos reservados.
+        </p>
+      </div>
+      <p class="footer-legal">
+        Â© Indiehoy - TDDM 2026. Todos los derechos reservados<br>
+        Defensa al consumidor. Para reclamos <a href="#">ingresar aca</a>
+      </p>
+    </div>
+  </footer>
+
+  <footer class="footer-mobile" aria-label="Pie de página">
+    <img src="img/Logo_de_Indie_Hoy 2.png" alt="Indie Hoy" class="footer-mobile-logo">
+    <div class="footer-mobile-top">
+      <div class="footer-mobile-secciones">
+        <span>INDIE HOY</span>
+        <a href="#">Musica</a>
+        <a href="#">Cine/series</a>
+        <a href="#">Eventos</a>
+        <a href="#">Cultura</a>
+      </div>
+      <div class="footer-mobile-redes">
+        <span>SEGUINOS EN:</span>
+        <div>
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="#" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+        </div>
+      </div>
+    </div>
+    <nav class="footer-mobile-links" aria-label="Enlaces legales">
+      <a href="#">CONTACTOS</a><a href="#">PRIVACIDAD</a><a href="#">TERMINOS DE USO</a><a href="#">PUBLICIDAD</a>
+    </nav>
+    <p>Indie Hoy es un medio digital especializado en noticias culturales y entretenimiento. Los textos, imágenes, logotipos y demás contenidos publicados en este sitio están protegidos por las leyes de propiedad intelectual. ©2026 Indie Hoy. Todos los derechos reservados.</p>
+  </footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
